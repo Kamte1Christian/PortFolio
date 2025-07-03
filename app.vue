@@ -28,4 +28,9 @@
 ::-webkit-scrollbar-thumb:active {
   background-color: #4B5563;
 }
+html,
+body {
+  overflow-x: hidden;
+}
+
 </style>

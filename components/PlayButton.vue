@@ -1,17 +1,16 @@
 <template>
   <div 
+  
     class="transform transition-all duration-300"
-    :class="[
-      'scale-100'
-    ]"
+    
   >
     <div 
-      class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center
+      class="w-5 h-5 bg-white/90 rounded-full flex items-center justify-center
              shadow-lg hover:scale-110 hover:bg-white transition-all duration-200
              backdrop-blur-sm"
     >
       <svg 
-        class="w-10 h-10 text-black" 
+        class="w-4 h-4 text-black" 
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden="true"
