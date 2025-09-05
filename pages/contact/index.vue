@@ -531,11 +531,11 @@ const socialLinks = [
     href: 'https://github.com/votreusername',
     icon: 'github'
   },
-  {
-    name: 'Twitter',
-    href: 'https://twitter.com/votreusername',
-    icon: 'twitter'
-  }
+  // {
+  //   name: 'Twitter',
+  //   href: 'https://twitter.com/votreusername',
+  //   icon: 'twitter'
+  // }
 ]
 
 // FAQ
@@ -584,21 +584,67 @@ const submitForm = async () => {
 
   try {
     // Paramètres du template EmailJS
+    // Construction du template HTML personnalisé
+    const emailTemplate = `
+      <div style="max-width: 600px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+        <!-- En-tête -->
+        <div style="background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%); padding: 20px; border-radius: 8px 8px 0 0;">
+          <h1 style="color: white; margin: 0; font-size: 24px; text-align: center;">Nouveau Message</h1>
+        </div>
+        
+        <!-- Contenu Principal -->
+        <div style="background-color: white; padding: 30px; border-radius: 0 0 8px 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <!-- Informations de l'expéditeur -->
+          <div style="margin-bottom: 25px; border-bottom: 2px solid #F3F4F6; padding-bottom: 15px;">
+            <h2 style="color: #1F2937; font-size: 18px; margin-bottom: 15px;">Informations de l'expéditeur</h2>
+            <p style="color: #4B5563; margin: 5px 0;">
+              <strong style="color: #374151;">Nom:</strong> ${form.value.name}
+            </p>
+            <p style="color: #4B5563; margin: 5px 0;">
+              <strong style="color: #374151;">Email:</strong> ${form.value.email}
+            </p>
+            <p style="color: #4B5563; margin: 5px 0;">
+              <strong style="color: #374151;">Date:</strong> ${new Date().toLocaleString('fr-FR', { 
+                dateStyle: 'long', 
+                timeStyle: 'short' 
+              })}
+            </p>
+            ${form.value.organization ? `
+              <p style="color: #4B5563; margin: 5px 0;">
+                <strong style="color: #374151;">Organisation:</strong> ${form.value.organization}
+              </p>
+            ` : ''}
+          </div>
+
+          <!-- Sujet et Message -->
+          <div style="background-color: #F9FAFB; padding: 20px; border-radius: 6px; margin-bottom: 20px;">
+            <h3 style="color: #1F2937; font-size: 16px; margin-bottom: 10px;">
+              ${form.value.subject}
+            </h3>
+            <div style="color: #4B5563; line-height: 1.6; white-space: pre-wrap;">
+              ${form.value.message}
+            </div>
+          </div>
+        </div>
+
+        <!-- Pied de page -->
+        <div style="text-align: center; margin-top: 20px; color: #6B7280; font-size: 12px;">
+          <p>Ce message a été envoyé via le formulaire de contact de votre portfolio.</p>
+        </div>
+      </div>
+    `
+
     const templateParams = {
-      from_name: form.value.name,
-      from_email: form.value.email,
-      subject: form.value.subject,
-      organization: form.value.organization || 'Non spécifiée',
-      message: form.value.message,
-      to_email: 'kamtechristian161@gmail.com' // Votre email
+      to_email: 'kamtechristian161@gmail.com',
+      html: emailTemplate
     }
 
     // Envoi via EmailJS
     await emailjs.send(
-      'service_kj95p5m', // À remplacer par votre Service ID
-      'template_1ysocv4', // À remplacer par votre Template ID
+      'service_kj95p5m',
+      'template_1ysocv4',
       templateParams,
-      '7-HABE8vvhJLKjsk2' // À remplacer par votre clé publique
+      '7-HABE8vvhJLKjsk2'
     )
 
     // Réinitialiser le formulaire
