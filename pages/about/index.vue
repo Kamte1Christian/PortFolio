@@ -349,26 +349,27 @@ const values = [
 
 const goals = [
   {
-    title: "Excellence Académique",
-    description: "Obtenir un master dans une université de renommée internationale avec une spécialisation en intelligence artificielle et développement durable",
-    timeframe: "2025-2027"
+    title: "Progression Académique",
+    description: "Poursuivre mes études en informatique et obtenir une solide formation universitaire, avec pour objectif un master en génie logiciel ou intelligence artificielle.",
+    timeframe: "2024-2027"
   },
   {
-    title: "Recherche Appliquée",
-    description: "Contribuer à la recherche dans le domaine des technologies vertes et de l'IA responsable pour résoudre les défis environnementaux",
-    timeframe: "2026-2028"
+    title: "Expérience Professionnelle",
+    description: "Acquérir de l’expérience à travers des stages, projets collaboratifs et opportunités freelance afin de renforcer mes compétences pratiques.",
+    timeframe: "2024-2026"
   },
   {
-    title: "Impact Social",
-    description: "Développer des solutions technologiques innovantes pour améliorer l'éducation et l'accès aux services numériques en Afrique",
-    timeframe: "2027-2030"
+    title: "Projets à Impact",
+    description: "Développer des applications et outils technologiques utiles pour la communauté, en particulier dans les domaines de l’éducation et de l’accès au numérique en Afrique.",
+    timeframe: "2026-2030"
   },
   {
-    title: "Leadership Global",
-    description: "Devenir un leader reconnu dans l'innovation technologique durable et mentorer la prochaine génération de développeurs africains",
+    title: "Contribution et Partage",
+    description: "Continuer à apprendre, partager mes connaissances et inspirer d’autres étudiants passionnés par le développement et l’innovation technologique.",
     timeframe: "2030+"
   }
 ]
+
 
 const scholarshipReasons = [
   {

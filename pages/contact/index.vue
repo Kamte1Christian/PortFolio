@@ -528,7 +528,7 @@ const socialLinks = [
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/votreusername',
+    href: 'https://github.com/Kamte1Christian',
     icon: 'github'
   },
   // {
@@ -541,31 +541,42 @@ const socialLinks = [
 // FAQ
 const faqs = ref([
   {
-    question: "Quel type de bourse recherchez-vous ?",
-    answer: "Je recherche principalement des bourses d'études pour un master dans le domaine de l'informatique/génie logiciel, de préférence dans des universités reconnues internationalement. Je suis ouvert aux bourses complètes ou partielles.",
+    question: "Quel type d'opportunités recherchez-vous ?",
+    answer: "Je suis ouvert à différentes opportunités telles que des bourses d'études, des emplois, des stages, du freelancing, ainsi que des projets collaboratifs ou des partenariats dans le domaine de l'informatique et du génie logiciel.",
     isOpen: false
   },
   {
-    question: "Êtes-vous disponible pour des entretiens ?",
-    answer: "Oui, je suis disponible pour des entretiens en ligne ou en personne selon votre localisation. Je peux m'adapter à différents fuseaux horaires pour faciliter nos échanges.",
+    question: "Êtes-vous disponible pour des entretiens ou des collaborations ?",
+    answer: "Oui, je suis disponible pour des entretiens en ligne ou en personne selon votre localisation. Je suis également ouvert à collaborer sur des projets innovants, qu'ils soient académiques, professionnels ou communautaires.",
     isOpen: false
   },
   {
-    question: "Quand souhaitez-vous commencer vos études ?",
-    answer: "Je vise idéalement la rentrée de septembre 2025, mais je suis flexible selon les programmes disponibles. Je peux également considérer une rentrée en janvier 2026 si nécessaire.",
+    question: "Quand souhaitez-vous démarrer un emploi, un projet ou une formation ?",
+    answer: "Je suis disponible immédiatement pour des collaborations à distance et je vise la rentrée de septembre 2025 pour mes études. Je reste flexible en fonction des opportunités qui se présentent.",
     isOpen: false
   },
   {
-    question: "Avez-vous des préférences géographiques ?",
-    answer: "Je suis ouvert à étudier partout dans le monde, avec un intérêt particulier pour l'Europe, l'Amérique du Nord et l'Australie. L'important pour moi est la qualité du programme académique.",
+    question: "Avez-vous des préférences géographiques ou de travail ?",
+    answer: "Je suis ouvert à des opportunités partout dans le monde, avec un intérêt particulier pour l'Europe, l'Amérique du Nord et l'Australie. Concernant le travail, je peux m’adapter aussi bien à un environnement présentiel qu’à un modèle hybride ou 100% remote.",
     isOpen: false
   },
   {
-    question: "Quel est votre niveau d'anglais ?",
-    answer: "J'ai un niveau courant en anglais avec un score TOEFL/IELTS à venir. Je peux communiquer efficacement à l'oral comme à l'écrit, et j'ai l'habitude de travailler dans un environnement anglophone.",
+    question: "Quel est votre niveau d'anglais et de communication ?",
+    answer: "J'ai un bon niveau d'anglais, avec une certification TOEFL/IELTS en préparation. Je communique efficacement à l’oral comme à l’écrit et je suis à l’aise dans des environnements multiculturels et professionnels.",
+    isOpen: false
+  },
+  {
+    question: "Quels types de projets ou collaborations vous intéressent ?",
+    answer: "Je suis intéressé par des projets en développement web, applications mobiles, cybersécurité, intelligence artificielle et gestion de systèmes. Je cherche également à contribuer à des initiatives sociales et open-source.",
+    isOpen: false
+  },
+  {
+    question: "Quels avantages pouvez-vous apporter dans une équipe ou un projet ?",
+    answer: "Je suis motivé, adaptable et axé sur les résultats. J’apporte une solide base en informatique, une capacité à résoudre des problèmes, une bonne communication et une volonté de toujours apprendre de nouvelles compétences.",
     isOpen: false
   }
 ])
+
 
 // Fonction pour basculer FAQ
 const toggleFaq = (index) => {
@@ -584,59 +595,25 @@ const submitForm = async () => {
 
   try {
     // Paramètres du template EmailJS
-    // Construction du template HTML personnalisé
-    const emailTemplate = `
-      <div style="max-width: 600px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
-        <!-- En-tête -->
-        <div style="background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%); padding: 20px; border-radius: 8px 8px 0 0;">
-          <h1 style="color: white; margin: 0; font-size: 24px; text-align: center;">Nouveau Message</h1>
-        </div>
-        
-        <!-- Contenu Principal -->
-        <div style="background-color: white; padding: 30px; border-radius: 0 0 8px 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-          <!-- Informations de l'expéditeur -->
-          <div style="margin-bottom: 25px; border-bottom: 2px solid #F3F4F6; padding-bottom: 15px;">
-            <h2 style="color: #1F2937; font-size: 18px; margin-bottom: 15px;">Informations de l'expéditeur</h2>
-            <p style="color: #4B5563; margin: 5px 0;">
-              <strong style="color: #374151;">Nom:</strong> ${form.value.name}
-            </p>
-            <p style="color: #4B5563; margin: 5px 0;">
-              <strong style="color: #374151;">Email:</strong> ${form.value.email}
-            </p>
-            <p style="color: #4B5563; margin: 5px 0;">
-              <strong style="color: #374151;">Date:</strong> ${new Date().toLocaleString('fr-FR', { 
-                dateStyle: 'long', 
-                timeStyle: 'short' 
-              })}
-            </p>
-            ${form.value.organization ? `
-              <p style="color: #4B5563; margin: 5px 0;">
-                <strong style="color: #374151;">Organisation:</strong> ${form.value.organization}
-              </p>
-            ` : ''}
-          </div>
-
-          <!-- Sujet et Message -->
-          <div style="background-color: #F9FAFB; padding: 20px; border-radius: 6px; margin-bottom: 20px;">
-            <h3 style="color: #1F2937; font-size: 16px; margin-bottom: 10px;">
-              ${form.value.subject}
-            </h3>
-            <div style="color: #4B5563; line-height: 1.6; white-space: pre-wrap;">
-              ${form.value.message}
-            </div>
-          </div>
-        </div>
-
-        <!-- Pied de page -->
-        <div style="text-align: center; margin-top: 20px; color: #6B7280; font-size: 12px;">
-          <p>Ce message a été envoyé via le formulaire de contact de votre portfolio.</p>
-        </div>
-      </div>
-    `
-
     const templateParams = {
+      name: form.value.name,
+      email: form.value.email,
+      time: new Date().toLocaleString('fr-FR', { 
+        dateStyle: 'long', 
+        timeStyle: 'short' 
+      }),
+      subject: form.value.subject,
+      organization: form.value.organization || 'Non spécifiée',
+      message: form.value.message,
       to_email: 'kamtechristian161@gmail.com',
-      html: emailTemplate
+      // Variables pour le template HTML
+      template_name: form.value.name,
+      template_email: form.value.email,
+      template_time: new Date().toLocaleString('fr-FR', { 
+        dateStyle: 'long', 
+        timeStyle: 'short' 
+      }),
+      template_message: form.value.message
     }
 
     // Envoi via EmailJS

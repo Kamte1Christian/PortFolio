@@ -375,21 +375,22 @@ const categories = ['Tous', 'Web', 'Mobile', 'Data Science', 'AI/ML', 'Académiq
 
 // Données des projets - À PERSONNALISER
 const projects = [
-  {
-    id: 1,
-    title: "Application de Gestion Étudiante",
-    category: "Web",
-    description: "Plateforme web complète pour la gestion des étudiants, notes et emplois du temps avec interface admin et étudiant.",
-    fullDescription: "J'ai développé une application web full-stack pour simplifier la gestion académique. L'application permet aux étudiants de consulter leurs notes, emplois du temps et de communiquer avec les professeurs, tandis que l'interface administrative offre des outils complets de gestion.",
-    challenges: "La principale difficulté était de créer une architecture scalable capable de gérer plusieurs milliers d'utilisateurs simultanés tout en maintenant la sécurité des données sensibles.",
-    solutions: "J'ai implémenté une architecture microservices avec authentification JWT, base de données optimisée avec indexation appropriée et mise en place d'un système de cache Redis pour améliorer les performances.",
-    image: "/images/projects/student-app.jpg",
-    technologies: ["Vue.js", "Node.js", "MongoDB", "Express", "JWT", "Redis"],
-    duration: "4 mois",
-    impact: "Utilisée par 500+ étudiants, réduction de 60% du temps de traitement administratif",
-    demoUrl: "https://demo.student-app.com",
-    githubUrl: "https://github.com/votreusername/student-app"
-  },
+ {
+  id: 1,
+  title: "Application de Gestion Bibliothèque",
+  category: "Web",
+  description: "Application web pour gérer les livres, abonnements et emprunts dans une bibliothèque avec une interface intuitive.",
+  fullDescription: "J'ai développé une application web full-stack qui facilite la gestion des livres, des exemplaires et des abonnements des utilisateurs. L'application permet aux étudiants de rechercher et d’emprunter des livres, tandis que l’interface admin permet de gérer le catalogue, les abonnés et le suivi des emprunts/retours.",
+  challenges: "Le défi principal consistait à assurer la fiabilité des opérations d’emprunt/retour et à gérer les règles métier (limite d’emprunts par utilisateur, gestion des abonnements premium, etc.).",
+  solutions: "J'ai mis en place une authentification sécurisée avec JWT, une base de données relationnelle structurée et optimisée sous MySQL, ainsi qu’une interface claire construite avec VueJS et Tailwind CSS pour une bonne expérience utilisateur.",
+  image: "/images/projects/library-app.jpg",
+  technologies: ["Symfony", "GraphQL", "MySQL", "JWT", "VueJS", "Tailwind CSS"],
+  duration: "4 mois",
+  impact: "Simplifie la gestion des livres et des abonnements, tout en offrant aux étudiants un accès rapide et pratique au catalogue.",
+  demoUrl: "https://demo.library-app.com",
+  githubUrl: "https://github.com/Kamte1Christian/Bibliotheque"
+},
+
   // {
   //   id: 2,
   //   title: "Système de Recommandation E-commerce",
@@ -434,20 +435,21 @@ const projects = [
   //   githubUrl: "https://github.com/votreusername/climate-analysis"
   // },
   {
-    id: 5,
-    title: "PORTFOLIO",
-    category: "Académique",
-    description: "Plateforme LMS avec cours vidéo, quiz interactifs et système de progression pour l'éducation à distance.",
-    fullDescription: "Système de gestion d'apprentissage complet développé comme projet de fin d'études, offrant une alternative accessible à l'éducation traditionnelle avec fonctionnalités avancées de suivi pédagogique.",
-    challenges: "Créer une expérience d'apprentissage engageante tout en gérant la bande passante limitée dans certaines régions.",
-    solutions: "Implémentation de la compression vidéo adaptative, mode hors-ligne avec synchronisation intelligente et interface progressive optimisée pour connexions lentes.",
-    image: "/images/projects/lms-platform.jpg",
-    technologies: ["Django", "PostgreSQL", "Redis", "Celery", "Bootstrap", "WebRTC"],
-    duration: "8 mois",
-    impact: "300+ étudiants inscrits, taux de complétion des cours de 85%, mention très bien au projet",
-    demoUrl: "https://port-folio-kamte.vercel.app/",
-    githubUrl: "https://github.com/votreusername/lms-platform"
-  },
+  id: 5,
+  title: "Portfolio",
+  category: "Académique",
+  description: "Site web personnel présentant mes projets, compétences et parcours académique.",
+  fullDescription: "J'ai développé un portfolio interactif en ligne afin de mettre en valeur mes compétences, mes expériences et mes projets. Le site permet aux visiteurs de découvrir mes réalisations, de consulter mes technologies de prédilection et d'accéder à mes informations de contact.",
+  challenges: "Le principal défi était de concevoir une interface moderne et responsive, tout en organisant efficacement les informations pour qu'elles soient claires et attractives.",
+  solutions: "J'ai utilisé VueJS avec TypeScript pour une structure modulaire et maintenable, et Tailwind CSS pour créer un design épuré et responsive adapté aux différents appareils.",
+  image: "/images/projects/portfolio.jpg",
+  technologies: ["VueJS", "TypeScript", "Tailwind CSS"],
+  duration: "2 mois",
+  impact: "Améliore ma visibilité professionnelle et me permet de présenter mes compétences et projets de manière claire et professionnelle.",
+  demoUrl: "https://port-folio-kamte.vercel.app/",
+  githubUrl: "https://github.com/Kamte1Christian/PortFolio"
+}
+,
   // {
   //   id: 6,
   //   title: "Chatbot Intelligent Customer Service",

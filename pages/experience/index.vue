@@ -305,101 +305,43 @@ useSeoMeta({
 // DONNÉES À PERSONNALISER - EXPÉRIENCE
 const experiences = [
   {
-    position: "Développeur Full-Stack (Stage)",
-    company: "Nom de l'Entreprise",
-    location: "Ville, Pays",
-    period: "Juin - Septembre 2024",
-    type: "Stage - 4 mois",
-    description: "Développement d'applications web modernes au sein d'une équipe agile de 6 développeurs, avec focus sur l'optimisation des performances et l'expérience utilisateur.",
-    responsibilities: [
-      "Développement de fonctionnalités frontend avec React.js et TypeScript",
-      "Création d'APIs REST robustes avec Node.js et Express", 
-      "Optimisation des performances et debugging avancé",
-      "Participation active aux cérémonies agiles (daily, planning, retro)",
-      "Rédaction de tests unitaires et documentation technique complète"
-    ],
-    technologies: ["React.js", "TypeScript", "Node.js", "MongoDB", "Git", "Jest", "Docker", "AWS"],
-    achievements: [
-      "Amélioration des performances de 40% sur le module principal",
-      "Développement d'un système de notification temps réel avec WebSocket",
-      "Formation et mentorat de 2 nouveaux stagiaires",
-      "Contribution à l'architecture microservices de l'application"
-    ]
-  },
-  {
-    position: "Assistant de Recherche",
-    company: "Laboratoire d'Informatique - Université",
-    location: "Ville, Pays",
-    period: "Mars - Juin 2024",
-    type: "Temps partiel",
-    description: "Assistance à la recherche sur les algorithmes d'apprentissage automatique appliqués au traitement du langage naturel, avec focus sur l'analyse de sentiment.",
-    responsibilities: [
-      "Implémentation d'algorithmes de machine learning avancés",
-      "Collecte et préparation de datasets volumineux (100K+ entrées)",
-      "Analyse statistique des résultats et visualisation des données",
-      "Rédaction de rapports de recherche scientifique",
-      "Présentation des résultats lors de séminaires académiques"
-    ],
-    technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "Jupyter", "NLTK", "Matplotlib"],
-    achievements: [
-      "Co-auteur d'un article accepté à une conférence internationale",
-      "Développement d'un modèle atteignant 92% de précision",
-      "Présentation remarquée au symposium étudiant universitaire",
-      "Création d'un pipeline de données automatisé"
-    ]
-  },
-  {
-    position: "Développeur Junior",
-    company: "Startup Locale",
+    position: "Stagiaire Développeur Full-Stack",
+    company: "CINAF",
     location: "Douala, Cameroun",
-    period: "Janvier - Mars 2024",
-    type: "Stage - 3 mois",
-    description: "Développement d'une application mobile cross-platform pour la gestion des petites entreprises locales, en collaboration directe avec les clients.",
+    period: "Juillet 2024 - Présent",
+    type: "Stage (en cours)",
+    description: "Participation au développement d’applications web et à l’intégration de nouvelles fonctionnalités dans des projets internes.",
     responsibilities: [
-      "Développement mobile avec React Native",
-      "Intégration d'APIs tiers (paiement mobile, géolocalisation)",
-      "Interface utilisateur adaptée aux besoins locaux",
-      "Tests utilisateurs et itérations basées sur les retours",
-      "Déploiement sur Google Play Store et App Store"
+      "Développement et maintenance de fonctionnalités backend avec Symfony et API Platform",
+      "Implémentation de l’authentification JWT et gestion des utilisateurs",
+      "Mise en place de fonctionnalités de messagerie et de gestion de données",
+      "Contribution au développement frontend avec React.js et Tailwind CSS",
+      "Collaboration avec l’équipe sur les bonnes pratiques de versioning (Git)"
     ],
-    technologies: ["React Native", "Firebase", "Node.js", "Express", "MongoDB", "Mobile Money APIs"],
+    technologies: ["Symfony", "API Platform", "JWT", "MySQL", "React.js", "Tailwind CSS", "Git"],
     achievements: [
-      "Application téléchargée par 500+ utilisateurs en 2 semaines",
-      "Feedback utilisateur moyen de 4.7/5 étoiles",
-      "Réduction de 60% du temps de gestion pour les commerçants",
-      "Première expérience de déploiement production mobile"
+      "Participation au développement d’un système de messagerie interne",
+      "Amélioration de la gestion des utilisateurs avec rôles et abonnements",
+      "Première expérience concrète en entreprise dans le développement full-stack"
     ]
   }
 ]
 
+// DONNÉES À PERSONNALISER - ENGAGEMENTS
 const engagements = [
   {
-    title: "Président du Club Informatique",
-    organization: "Association Étudiante Universitaire", 
-    period: "2023 - 2024",
-    description: "Direction et animation d'une communauté tech étudiante dynamique, organisation d'événements d'envergure et création d'opportunités d'apprentissage pour tous les niveaux.",
-    impact: "Organisation de 12 événements majeurs, formation de 150+ étudiants aux nouvelles technologies, création de 3 partenariats avec des entreprises tech locales"
+    title: "Membre du Club Informatique",
+    organization: "Université",
+    period: "2023 - Présent",
+    description: "Participation à des activités étudiantes autour de l’informatique et de la programmation, apprentissage collaboratif et échanges avec d’autres étudiants passionnés.",
+    impact: "Contribution à des ateliers internes et partage de connaissances en programmation."
   },
   {
-    title: "Mentor Bénévole Tech",
-    organization: "Code for Africa",
-    period: "2022 - Présent", 
-    description: "Accompagnement personnalisé de jeunes développeurs dans leur apprentissage, contribution active à des projets open source à impact social positif pour l'Afrique.",
-    impact: "25+ jeunes mentorés avec succès, contribution à 5 projets open source, organisation de 3 bootcamps gratuits"
-  },
-  {
-    title: "Formateur Informatique Communautaire",
-    organization: "Centre Numérique Local",
-    period: "2022 - 2023",
-    description: "Formation en informatique de base et initiation au numérique pour adultes et personnes âgées, avec adaptation pédagogique aux besoins spécifiques de chaque apprenant.",
-    impact: "80+ personnes formées avec 95% de satisfaction, création de supports pédagogiques réutilisables, formation de 3 autres formateurs bénévoles"
-  },
-  {
-    title: "Organisateur Hackathon Étudiant",
-    organization: "TechCameroon Community",
-    period: "2023",
-    description: "Organisation du premier hackathon inter-universitaire du Cameroun, mobilisation de sponsors, coordination d'équipes et création d'une émulation tech étudiante.",
-    impact: "120 participants de 8 universités, 15 projets innovants, 3 startups créées suite à l'événement, couverture médiatique nationale"
+    title: "Apprentissage en Autodidacte",
+    organization: "Projets Personnels",
+    period: "2024 - Présent",
+    description: "Réalisation de projets personnels pour renforcer mes compétences en développement web et logiciel.",
+    impact: "Création d’un portfolio en ligne, mise en pratique de Symfony, API Platform, React.js et Tailwind CSS."
   }
 ]
 </script>

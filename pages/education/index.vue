@@ -48,15 +48,15 @@
         <!-- Stats -->
         <div class="flex flex-wrap justify-center gap-8 mt-12 animate-slide-up animation-delay-600">
           <div class="text-center bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-            <div class="text-3xl font-bold text-emerald-400 mb-1">3.8</div>
+            <div class="text-3xl font-bold text-emerald-400 mb-1">2.7</div>
             <div class="text-gray-400 text-sm">GPA Moyen</div>
           </div>
           <div class="text-center bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-            <div class="text-3xl font-bold text-teal-400 mb-1">5+</div>
-            <div class="text-gray-400 text-sm">Certifications</div>
+            <div class="text-3xl font-bold text-teal-400 mb-1">0</div>
+            <div class="text-gray-400 text-sm">Certification</div>
           </div>
           <div class="text-center bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-            <div class="text-3xl font-bold text-cyan-400 mb-1">10+</div>
+            <div class="text-3xl font-bold text-cyan-400 mb-1">2</div>
             <div class="text-gray-400 text-sm">Projets Académiques</div>
           </div>
         </div>
@@ -382,117 +382,85 @@ useSeoMeta({
 // DONNÉES À PERSONNALISER - FORMATION
 const educationData = [
   {
-    degree: "Master en Informatique", 
-    institution: "Université de Yaoundé I",
-    location: "Yaoundé, Cameroun",
+    degree: "Licence en Informatique (En cours)", 
+    institution: "Institut Universitaire de Technologie de Douala (IUT)",
+    location: "Douala, Cameroun",
     period: "2023 - En cours",
-    grade: "En cours - 3.7/4.0",
-    description: "Spécialisation en génie logiciel avec focus sur l'intelligence artificielle et le développement d'applications scalables. Formation avancée couvrant les aspects théoriques et pratiques du développement logiciel moderne.",
+    grade: "En cours",
+    description: "Formation en informatique avec apprentissage des bases du développement web, programmation et gestion de bases de données. Découverte de frameworks modernes et bonnes pratiques de développement.",
     subjects: [
-      "Algorithms Avancés", 
-      "Machine Learning", 
-      "Architecture Logicielle", 
-      "Bases de Données Distribuées", 
-      "Sécurité Informatique",
-      "Cloud Computing"
+      "Programmation (Python, JavaScript)",
+      "Bases de Données (MySQL)",
+      "Développement Web (HTML, CSS, VueJS, Symfony)",
+      "Algorithmique et Structures de Données",
+      "Systèmes et Réseaux"
     ],
     achievements: [
-      "Projet de fin d'études sur l'IA appliquée à la reconnaissance vocale",
-      "Participation au concours de programmation ACM-ICPC 2024",
-      "Président du club informatique universitaire",
-      "Publication d'un article dans une conférence étudiante"
-    ]
-  },
-  {
-    degree: "Licence en Informatique",
-    institution: "Université de Douala",
-    location: "Douala, Cameroun", 
-    period: "2020 - 2023",
-    grade: "3.8/4.0 (Magna Cum Laude)",
-    description: "Formation complète en informatique couvrant programmation, systèmes, réseaux et bases de données. Solide base théorique complétée par de nombreux projets pratiques.",
-    subjects: [
-      "Programmation Java/Python", 
-      "Structures de Données", 
-      "Systèmes d'Exploitation", 
-      "Réseaux Informatiques", 
-      "Mathématiques Appliquées",
-      "Génie Logiciel"
-    ],
-    achievements: [
-      "Diplômé Magna Cum Laude (Top 5% de la promotion)",
-      "Prix du meilleur projet étudiant 2023 - Application mobile",
-      "Stage de recherche au laboratoire universitaire",
-      "Tutorat de 15+ étudiants en programmation"
+      "Création d’un portfolio personnel pour présenter mes projets",
+      "Participation à des ateliers et mini-projets en développement web",
+      "Stage de développement Full-Stack en cours"
     ]
   },
   {
     degree: "Baccalauréat Scientifique", 
-    institution: "Lycée Bilingue de Douala",
+    institution: "Lycée Bilingue de Bepanda",
     location: "Douala, Cameroun",
-    period: "2017 - 2020", 
-    grade: "18.5/20 (Mention Très Bien)",
-    description: "Baccalauréat série C (Mathématiques-Sciences Physiques) avec spécialisation en informatique. Formation rigoureuse préparant aux études supérieures scientifiques.",
+    period: "2020 - 2023", 
+    grade: "En cours de précision",
+    description: "Baccalauréat série C avec spécialisation en mathématiques et sciences physiques. Formation préparant aux études supérieures scientifiques et techniques.",
     subjects: [
       "Mathématiques", 
-      "Physique-Chimie", 
-      "Sciences de la Vie", 
-      "Informatique", 
-      "Anglais",
-      "Français"
+      "Mathématiques Avancées",
+      "Physique", 
+      "Informatique",
     ],
     achievements: [
-      "Major de promotion avec 18.5/20",
-      "Prix d'excellence en mathématiques",
-      "Participation aux olympiades nationales de mathématiques",
-      "Délégué général des élèves pendant 2 ans"
+      "Obtention du baccalauréat série C",
+      "Participation à des concours académiques locaux",
+      "Délégué de classe et représentant des élèves"
     ]
   }
 ]
 
+
 const certifications = [
-  {
-    name: "AWS Solutions Architect Associate",
-    issuer: "Amazon Web Services",
-    description: "Certification professionnelle couvrant la conception d'architectures cloud scalables et sécurisées sur AWS.",
-    date: "2024",
-    credentialUrl: "https://aws.amazon.com/certification/"
-  },
-  {
-    name: "Google Professional Cloud Developer",
-    issuer: "Google Cloud",
-    description: "Certification validant les compétences en développement d'applications cloud natives sur Google Cloud Platform.",
-    date: "2024",
-    credentialUrl: "https://cloud.google.com/certification"
-  },
-  {
-    name: "Machine Learning Specialization",
-    issuer: "Stanford University - Coursera", 
-    description: "Spécialisation complète en apprentissage automatique couvrant les algorithmes supervisés et non supervisés.",
-    date: "2023",
-    credentialUrl: "https://coursera.org/verify/specialization/certificate"
-  },
-  {
-    name: "Full Stack Web Development",
-    issuer: "The Odin Project",
-    description: "Formation intensive en développement web full-stack couvrant JavaScript, React, Node.js et les bases de données.",
-    date: "2023",
-    credentialUrl: null
-  },
-  {
-    name: "Scrum Master Professional",
-    issuer: "Scrum.org",
-    description: "Certification en méthodologies agiles et gestion de projet Scrum pour le leadership d'équipes de développement.",
-    date: "2023",
-    credentialUrl: "https://scrum.org/certificates"
-  },
-  {
-    name: "MongoDB Developer Associate",
-    issuer: "MongoDB University",
-    description: "Certification validant l'expertise dans la conception et l'optimisation de bases de données MongoDB.",
-    date: "2022",
-    credentialUrl: "https://university.mongodb.com/certification"
-  }
+  // {
+  //   name: "Introduction au Développement Web",
+  //   issuer: "The Odin Project",
+  //   description: "Formation complète en développement web front-end et back-end avec HTML, CSS, JavaScript et Node.js.",
+  //   date: "2024",
+  //   credentialUrl: "https://www.theodinproject.com/"
+  // },
+  // {
+  //   name: "Développement Front-End avec VueJS",
+  //   issuer: "Udemy",
+  //   description: "Apprentissage du framework VueJS pour créer des applications web interactives et responsives.",
+  //   date: "2024",
+  //   credentialUrl: "https://www.udemy.com/"
+  // },
+  // {
+  //   name: "Introduction à Symfony et API Platform",
+  //   issuer: "OpenClassrooms",
+  //   description: "Formation sur le framework Symfony et l’API Platform pour construire des applications web sécurisées.",
+  //   date: "2024",
+  //   credentialUrl: "https://openclassrooms.com/"
+  // },
+  // {
+  //   name: "Git et GitHub pour Développeurs",
+  //   issuer: "Coursera",
+  //   description: "Cours sur la gestion de versions, la collaboration en équipe et les bonnes pratiques avec Git et GitHub.",
+  //   date: "2024",
+  //   credentialUrl: "https://www.coursera.org/"
+  // },
+  // {
+  //   name: "Initiation au JavaScript et TypeScript",
+  //   issuer: "freeCodeCamp",
+  //   description: "Cours pour maîtriser les bases de JavaScript et TypeScript appliquées au développement web moderne.",
+  //   date: "2024",
+  //   credentialUrl: "https://www.freecodecamp.org/"
+  // }
 ]
+
 </script>
 
 <style scoped>

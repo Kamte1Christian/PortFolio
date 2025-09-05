@@ -133,8 +133,9 @@ const currentYear = new Date().getFullYear()
 
 // Données du footer - À PERSONNALISER
 const footerData = {
-  name: "Votre Nom",
-  description: "Étudiant passionné en informatique, à la recherche d'opportunités de bourses pour poursuivre mes études à l'international et contribuer à l'innovation technologique.",
+  name: "Kamte Takam Christian Peresse",
+description: "Étudiant en Génie Informatique, passionné par le développement logiciel et les technologies web. Je développe des projets personnels et professionnels afin de renforcer mes compétences, et je suis ouvert aux opportunités de stages, collaborations, bourses d’études et projets innovants.",
+
   
   socialLinks: [
     {
@@ -144,7 +145,7 @@ const footerData = {
     },
     {
       name: 'GitHub',
-      href: 'https://github.com/votreusername',
+      href: 'https://github.com/Kamte1Christian',
       icon: defineAsyncComponent(() => import('@heroicons/vue/24/outline').then(m => m.CodeBracketIcon))
     },
     {
@@ -154,7 +155,7 @@ const footerData = {
     },
     {
       name: 'Email',
-      href: 'mailto:votre.email@example.com',
+      href: 'mailto:kamtechristian161@gmail.com',
       icon: EnvelopeIcon
     }
   ],
@@ -169,9 +170,9 @@ const footerData = {
   ],
 
   contact: {
-    email: 'votre.email@example.com',
-    phone: '+237 6XX XXX XXX',
-    location: 'Yaoundé, Cameroun'
+    email: 'kamtechristian161@gmail.com',
+    phone: '+237 656 719 227',
+    location: 'Douala, Cameroun'
   }
 }
 
