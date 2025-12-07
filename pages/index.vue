@@ -329,7 +329,7 @@ const skillCategories = [
     name: "Développement Web",
     icon: CodeBracketIcon,
     skills: [
-      { name: "PHP/Symfony", level: 4 },
+      { name: "PHP/Symfony/Laravel", level: 4 },
       { name: "JavaScript", level: 4 },
       { name: "React/Vue.js", level: 4 },
       { name: "Node.js", level: 3 }
@@ -341,8 +341,6 @@ const skillCategories = [
     skills: [
       { name: "MySQL", level: 4 },
       { name: "PostgreSQL", level: 3 },
-      { name: "MongoDB", level: 3 },
-      { name: "Redis", level: 2 }
     ]
   },
   {

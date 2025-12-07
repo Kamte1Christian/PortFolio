@@ -150,7 +150,7 @@ description: "Étudiant en Génie Informatique, passionné par le développement
     },
     {
       name: 'Twitter',
-      href: 'https://twitter.com/votreusername',
+      href: 'https://twitter.com/kamtechristian',
       icon: defineAsyncComponent(() => import('@heroicons/vue/24/outline').then(m => m.AtSymbolIcon))
     },
     {
@@ -171,7 +171,7 @@ description: "Étudiant en Génie Informatique, passionné par le développement
 
   contact: {
     email: 'kamtechristian161@gmail.com',
-    phone: '+237 656 719 227',
+    phone: '+237 674 215 913',
     location: 'Douala, Cameroun'
   }
 }
